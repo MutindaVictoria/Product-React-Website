@@ -1,6 +1,6 @@
 import './App.css';
 import Products from './Products';
-import NavBar from './NavBar';
+import navbar from './NavBar';
 import Form from './Form';
 import ProductDetailsPage from './ShowProduct';
 import Login from './Login';
@@ -11,7 +11,9 @@ import Productsinfo from './ShowProduct';
 function App() {
   return (
     <div >
-     <navbar/> 
+     <navbar/>
+     {/* <NavBar/> */}
+     <Login/>
       <BrowserRouter>
       <Routes>
        <Route index element={<Products/>}/>
